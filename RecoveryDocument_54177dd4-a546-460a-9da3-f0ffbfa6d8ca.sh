@@ -26,4 +26,4 @@ get_db() {
 }
 
 $docker_pfx psql --dbname $(get_db 'ekd_ekd') -c "SET search_path to public, ekd_ekd;
-UPDATE ekd_ekd.document SET deleted_date = NULL, deleter_id = NULL WHERE id = '8fadb29a-435f-4fe0-bf73-f040fd1c2a29';"
+UPDATE ekd_ekd.document SET deleted_date = NULL, deleter_id = NULL WHERE id = '989898';"
