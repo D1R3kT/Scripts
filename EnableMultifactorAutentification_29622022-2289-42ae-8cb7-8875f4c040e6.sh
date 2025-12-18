@@ -26,7 +26,3 @@ get_db() {
 $docker_pfx psql --dbname ekd_metadata -A -t -c "SET search_path to public, ekd_metadata;
 UPDATE tenant_settings
 SET mfa_enabled_date = now();"
-
-$docker_pfx psql --dbname ekd_metadata -A -t -c "SET search_path to public, ekd_metadata;
-UPDATE tenant_settings
-SET reset_mfa_enabled_date = now();"
